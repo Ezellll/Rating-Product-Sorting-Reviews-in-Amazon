@@ -10,7 +10,7 @@ pd.set_option('display.expand_frame_repr', False)
 # Görev 1:  
 #######################################################################
 
-df = pd.read_csv("measurement_problems/datasets/amazon_review.csv")
+df = pd.read_csv("Datasets/amazon_review.csv")
 df.head()
 
 # Adım 1:   Ürünün ortalama puanını hesaplanması.
@@ -24,7 +24,7 @@ df["reviewTime"] = pd.to_datetime(df["reviewTime"])
 
 current_date = df["reviewTime"].max()
 
-# Adım 2:  Tarihe göre ağırlıklı puan ortalamasını hesaplayınız.
+# Adım 2:  Tarihe göre ağırlıklı puan ortalamasını hesaplanması.
 #   -reviewTime değişkenini tarih değişkeni olarak tanıtmanız
 #   - reviewTime'ın max değerini current_date olarak kabul etmeniz
 #   -her bir puan-yorum tarihi ile current_date'in farkını gün cinsinden
